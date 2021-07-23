@@ -21,7 +21,7 @@ All() *DBInnerModel
 
 
 ### HTTP engine:
-simple HTTP engine developed on net/http package which supports in query params([example](https://github.com/amupxm/pure-webserver/blob/main/controller/httpEngine.go#L35)).
+simple HTTP engine build on net/http package which supports in query params([example](https://github.com/amupxm/pure-webserver/blob/main/controller/httpEngine.go#L35)).
 
 you can add your handler like this :
 ```go
@@ -42,7 +42,7 @@ func (e *engine) GetOne(c *httpEngine.ServerContext) {
 }
 ```
 ## Usage
-Use your system : be sure you had Golang compiler install on your device
+Use your system : be sure you have Golang compiler installed on your device
 ```bash
 touch database.json 
 
@@ -58,6 +58,18 @@ docker build --tag youruser/yourtag .
 docker run  -p 8080:8080 youruser/yourtag 
 ```
 **attention:** you can change bucket name and porn from `config/config.json`
+
+## Incoming changes :
+Test for add method
+
+Better structure on updating database
+
+Provide acid on database
+
+Add inner jwt to webserver
+
+Add validator pkg
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
