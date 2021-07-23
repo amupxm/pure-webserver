@@ -13,7 +13,7 @@ WriteToCollection(&YOUR_MODULE)
 GetFromCollection(&YOUR_MODULE) 
 UpdateCollection(&YOUR_MODULE) 
 
-// search on a query on single data (document).
+// search using query on single data (document).
 Where(fieldName string, value interface{}) 
 Update(&YOUR_MODULE) (*DBInnerModel, error)
 All() *DBInnerModel
@@ -57,7 +57,7 @@ Use docker :
 docker build --tag youruser/yourtag .
 docker run  -p 8080:8080 youruser/yourtag 
 ```
-**attention:** you can change bucket name and porn from `config/config.json`
+**attention:** you can change bucket name and port from `config/config.json`
 
 ## Incoming changes :
 Test for add method
