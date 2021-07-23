@@ -1,0 +1,8 @@
+{
+    "http":{
+        "port": "8080"
+    },
+    "database":{
+        "bucket_name" : "database.json"
+    }
+}
